@@ -91,7 +91,7 @@ Complete homework assignments: homework and solutions are available on the [cour
 
 ### Option 2: Live Cohort
 
-> **2025 Cohort:** Starts September 15. Register here: [Fill in this form](https://airtable.com/shryxwLd0COOEaqXo)
+> **2026 Cohort:** Starts in September. Register here: [Fill in this form](https://airtable.com/shryxwLd0COOEaqXo)
 
 Runs once per year (September–December).
 
@@ -119,7 +119,7 @@ We summarized the key differences between the two joining options in this table:
 | **Structure** | Flexible, no deadlines | Weekly rhythm with deadlines and peer accountability |
 
 <p align="center">
-  <strong>Ready to start? <a href="https://airtable.com/shryxwLd0COOEaqXo">Join the 2025 cohort</a> or <a href="01-intro/">start with Module 1</a></strong>
+  <strong>Ready to start? <a href="https://airtable.com/shryxwLd0COOEaqXo">Join the 2026 cohort</a> or <a href="01-intro/">start with Module 1</a></strong>
 </p>
 
 ## Syllabus
