@@ -3,6 +3,7 @@
 
 * [Video](https://www.youtube.com/watch?v=Ne25VujHRLA)
 * [Notebook](https://colab.research.google.com/drive/1nCA4Q0f8DVFiLpfXdXvZtYUh-yYDy5i_?usp=sharing)
+* [Visual audit](visual-audit-2026-09-09.md)
 
 
 This workshop introduces deep learning for image classification using PyTorch. It is based on the [ML Zoomcamp Deep Learning module (08-deep-learning)](..) but adapted to use PyTorch instead of TensorFlow/Keras.
@@ -691,6 +692,11 @@ Common transformations:
 - Shifting
 - Shearing
 
+These transformations create varied training views while preserving the
+underlying class label:
+
+![Training-time augmentation creates rotated, cropped, and flipped views of the same pants image while keeping the pants label.](images/training-time-augmentation-imagegen.jpg)
+
 Important rules:
 - ✅ Apply ONLY to training data
 - ❌ Never augment validation/test data
@@ -881,4 +887,3 @@ We will use it in the Serverless module.
 ## Credits
 
 This workshop is based on the ML Zoomcamp Deep Learning module by [Alexey Grigorev](https://github.com/alexeygrigorev), adapted to use PyTorch instead of TensorFlow/Keras.
-

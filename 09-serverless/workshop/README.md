@@ -2,7 +2,7 @@
 
 * Video: https://www.youtube.com/watch?v=sHQaeVm5hT8
 
-In this workshop we will revise [he Serverless module (Module 9)](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/09-serverless) of 
+In this workshop we will revise [he Serverless module (Module 9)](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/main/09-serverless) of 
 [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp).
 
 In the module, we
@@ -124,6 +124,11 @@ We see the predictions:
 }
 ```
 
+The durable flow is a customer event invoking the Lambda function and
+returning a prediction response:
+
+![A customer event invokes an AWS Lambda function and receives a prediction response with a probability and decision.](images/aws-lambda-invocation-prediction-imagegen.jpg)
+
 Invoking with CLI: 
 
 ```bash
@@ -154,7 +159,7 @@ result = json.loads(response['Payload'].read())
 print(json.dumps(result, indent=2))
 ```
 
-You can also expose it as a web service (see [unit 9.7 about API Gateway](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/09-serverless/07-api-gateway.md)).
+You can also expose it as a web service (see [unit 9.7 about API Gateway](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/09-serverless/07-api-gateway.md)).
 
 
 ## AWS Lambda with Docker: Running Locally
@@ -392,6 +397,11 @@ Invoking the function is the same as before. See [`invoke.py`](lambda-sklearn/in
 Previously we used TF-lite for AWS Lambda. 
 
 In this workshop, we'll use an alternative - ONNX (Open Neural Network Exchange).
+
+The interoperability idea is that models from different frameworks can be
+converted to one exchange format and served through the same runtime:
+
+![Keras, PyTorch, and other frameworks can produce an ONNX model that runs with ONNX Runtime.](images/onnx-framework-interoperability-imagegen.jpg)
 
 We need will use the same Keras model as before.
 It was retrained for the newest TF version, you
@@ -689,4 +699,3 @@ We covered:
 - Implement monitoring and logging with CloudWatch
 - Consider using AWS Step Functions for complex ML workflows
 - Explore other serverless services like AWS Batch for training
-
